@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("bgindex.jpg");
+    background-size: cover; /* Đảm bảo hình nền phủ toàn bộ kích thước của trang */
+    color: white; /* Màu văn bản trên hình nền */
+}
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Màu nền đen với độ mờ 70% */
+    z-index: 9999;
+    transition: opacity 1s; /* Hiệu ứng mờ và nhạt dần */
+}
+#intro {
+    position: fixed;
+    top: 50%; /* Đặt vị trí ở giữa theo chiều dọc */
+    left: 0;
+    right: 0;
+    transform: translateY(-50%); /* Dịch chuyển lên trên 50% của chính nó */
+    text-align: center; /* Căn giữa dòng chữ */
+    transition: opacity 1s;
+}
+#content {
+    position: relative;
+    z-index: 10000;
+    opacity: 0; /* Mặc định ẩn nội dung */
+    transition: opacity 1s;
+    color: white; /* Màu văn bản */
+}
+#content-intro {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    transition: opacity 1s;
+}
+#content.show {
+    opacity: 1; /* Hiển thị nội dung */
+}
+.button-menu{
+    padding: 5px 8px;
+    margin-left: 3px;
+    border-radius: 6px;
+    box-shadow: #0000000d 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+.button-menu:hover{
+    cursor: pointer;
+    letter-spacing: 3px;
+    background-color: rgba(149, 208, 67, 0.553);
+    color: #fff;
+    box-shadow: rgba(149, 208, 67, 0.553) 0px 7px 29px 0px;
+}
+.button-menu:active {
+    letter-spacing: 3px;
+    background-color:  rgba(149, 208, 67, 0.553);
+    color: #fff;
+    box-shadow:  rgba(149, 208, 67, 0.553) 0px 0px 0px 0px; 
+    transform: translateY(10px);
+    transition: 100ms;
+}
