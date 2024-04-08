@@ -21,7 +21,7 @@ else
 <body>
         <header class="header">
             <form>
-                <left>DỰ ÁN STG</left>
+                <left>DỰ ÁN STGG</left>
                 <?php
                 // Kiểm tra xem người dùng đã đăng nhập chưa
                 if(isset($_SESSION["id"])) {
